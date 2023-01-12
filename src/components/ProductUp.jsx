@@ -1,8 +1,14 @@
-
+//↓↓↓↓ 導入你要用的東西 ↓↓↓↓
 import React from "react";
 import "../css/up.css";
 import "bootstrap";
+//↑↑↑↑ 導入你要用的東西 function ↑↑↑↑
 
+//↓↓↓↓ 宣告一些參數或是其他JS function ↓↓↓↓
+
+//↑↑↑↑ 宣告一些參數或是其他JS function ↑↑↑↑
+
+//↓↓↓↓ 這邊只寫HTML的畫面const ↓↓↓↓
 const ProductUp = () => {
   //↓↓↓↓ 宣告一些參數或是其他JS function(只限給此物件用的) ↓↓↓↓
   function readURL() {
@@ -14,8 +20,8 @@ const ProductUp = () => {
         var reader = new FileReader();
         reader.onload = function (e) {
           var img1 = document.createElement("img");
-          img1.width = "150";
-          img1.height = "150";
+          img1.style.width = "120px";
+          img1.style.height = "120px";
           img1.src = e.target.result;
           document.getElementById("preview_imgs").append(img1);
         };
@@ -115,3 +121,4 @@ const ProductUp = () => {
 
 //↓↓↓↓ export const的物件 ↓↓↓↓
 export default ProductUp;
+//↑↑↑↑ export const的物件 ↑↑↑↑
